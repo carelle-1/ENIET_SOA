@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission - INIET SOA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admission.css">
+</head>
+<body>
+  <div class="super-header">
+    <div class="super-header-left">
+      <div class="super-marquee">
+        <div class="marquee-content">
+          <span class="super-item">
+            <img src="asset/contact.png" alt="Téléphone" class="super-icon">
+            <span>(+237) 673 45 67 89</span>
+          </span>
+          <span class="super-item">
+            <img src="asset/localisation.png" alt="Localisation" class="super-icon">
+            <span>SOA, Cameroun</span>
+          </span>
+        </div>
+      </div>
+      <div class="super-item super-email">
+        <img src="asset/mail.png" alt="Email" class="super-icon">
+        <span>contact@inietsoa.com</span>
+      </div>
+    </div>
+    <div class="super-header-right">
+      <a href="#" class="social-link" aria-label="Facebook">
+        <img src="asset/facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="#" class="social-link" aria-label="YouTube">
+        <img src="asset/youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <a href="#" class="social-link" aria-label="Email">
+        <img src="asset/mail.png" alt="Email" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="logo-section">
+      <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="logo-img">
+      <div class="logo-text">
+        <h1>ENIET DE SOA</h1>
+        <p class="subtitle-1">Ecole Normale d'Instituteur</p>
+        <p class="subtitle-2">de l'Enseignement Technique</p>
+      </div>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button" aria-label="Ouvrir le menu">
+      <img src="asset/menu.png" alt="Menu" class="menu-icon">
+    </label>
+    <label for="menu-toggle" class="drawer-overlay"></label>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-item">
+        <img src="asset/home.png" alt="" class="nav-icon">
+        <span>Accueil</span>
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/ecole.png" alt="" class="nav-icon">
+          <span>L'école</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="ecole.html">Présentation générale</a>
+          <a href="#">Rôle de l'ENIET</a>
+        </div>
+      </details>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/AD.png" alt="" class="nav-icon">
+          <span>Admission</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="admission.html">Concours d'entrée</a>
+          <a href="#">Admission par étude de dossier</a>
+          <a href="#">Résultat</a>
+          <a href="#">Vie estudiantine</a>
+          <a href="#">Fiche étudiante</a>
+        </div>
+      </details>
+      <a href="filiere.html" class="nav-item">
+        <img src="asset/filiere.png" alt="" class="nav-icon">
+        <span>Filière</span>
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/INFO.png" alt="" class="nav-icon">
+          <span>Informations</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="#">Communiqués</a>
+          <a href="#">Note d'information</a>
+          <a href="#">Décisions</a>
+          <a href="#">Arréªtés</a>
+          <a href="#">Concours</a>
+          <a href="#">Résultat</a>
+          <a href="#">Archives</a>
+        </div>
+      </details>
+      <a href="#" class="nav-item">
+        <img src="asset/icons8-partenariat-50.png" alt="" class="nav-icon">
+        <span>Partenaires</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="asset/contact.png" alt="" class="nav-icon">
+        <span>Contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/étudiant.png" alt="Slide 1">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/ETUDIANTS.png" alt="Slide 2">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/REP.png" alt="Slide 3">
+        </div>
+      </div>
+
+      <div class="carousel-text">
+        <p class="admission-title">ADMISSION</p>
+        <p class="admission-subtitle"><span class="admission-underline">rejoignez</span> l'excellence à l'ENIET de SOA</p>
+        <p class="admission-desc">L'ENIET de SOA forme des instituteurs compétents, responsables</p>
+        <p class="admission-desc">et capables de relever les défis du développement du Cameroun</p>
+      </div>
+
+      <button class="carousel-btn prev" onclick="changeSlide(-1)"><img src="asset/pres.png" alt="Précédent"></button>
+      <button class="carousel-btn next" onclick="changeSlide(1)"><img src="asset/next.png" alt="Suivant"></button>
+
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </main>
+
+  <section class="admission-modalities">
+    <h2 class="modalities-title">NOS MODALITÉS D'ADMISSION</h2>
+    <div class="modalities-container">
+      <div class="modality-card modality-gray">
+        <div class="modality-icon">
+          <img src="asset\icons8-étudiant-50.png" alt="Concours" class="modality-icon-img">
+        </div>
+        <h3 class="modality-card-title">Concours d'entrée</h3>
+        <p class="modality-text">Accès direct après le baccalauréat</p>
+        <p class="modality-text">Inscription en ligne obligatoire</p>
+        <div class="modality-checklist">
+          <p class="modality-check-item"><span class="check-icon">✓</span> Dossier complet</p>
+          <p class="modality-check-item"><span class="check-icon">✓</span> Photocopie baccalauréat</p>
+          <p class="modality-check-item"><span class="check-icon">✓</span> Extrait d'acte de naissance</p>
+        </div>
+        <a href="#" class="btn btn-modality">En savoir plus <span class="arrow-right">→</span></a>
+      </div>
+
+      <div class="modality-card modality-yellow">
+        <div class="modality-icon">
+          <img src="asset\admis.png" alt="Étude de dossier" class="modality-icon-img">
+        </div>
+        <h3 class="modality-card-title">Étude de dossier</h3>
+        <p class="modality-text">Admission sur dossier pour candidats qualifiés</p>
+        <p class="modality-text">Délai de traitement: 30 jours</p>
+        <div class="modality-checklist">
+          <p class="modality-check-item"><span class="check-icon">✓</span> Diplôme équivalent</p>
+          <p class="modality-check-item"><span class="check-icon">✓</span> Lettre de motivation</p>
+          <p class="modality-check-item"><span class="check-icon">✓</span> CV actualisé</p>
+        </div>
+        <a href="#" class="btn btn-modality">En savoir plus <span class="arrow-right">→</span></a>
+      </div>
+
+      <div class="modality-card modality-gray">
+        <div class="modality-icon">
+          <img src="asset\fiche.png" alt="Fiche étudiante" class="modality-icon-img">
+        </div>
+        <h3 class="modality-card-title">Fiche étudiante</h3>
+        <p class="modality-text">Inscription administrative obligatoire</p>
+        <p class="modality-text">Remplissage en ligne ou sur place</p>
+        <div class="modality-checklist">
+          <p class="modality-check-item"><span class="check-icon">✓</span> Formulaire officiel</p>
+          <p class="modality-check-item"><span class="check-icon">✓</span> Photos d'identité</p>
+          <p class="modality-check-item"><span class="check-icon">✓</span> Frais d'inscription</p>
+        </div>
+        <a href="#" class="btn btn-modality">En savoir plus <span class="arrow-right">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="current-contest-section">
+    <h2 class="contest-title"><span class="contest-underline">concour</span>s en cours</h2>
+    <div class="contest-container">
+      <div class="contest-slider-card">
+        <div class="contest-carousel">
+          <div class="contest-slide active">
+            <img src="asset\SOA\ETUDIANTS.png" alt="Concours 1">
+          </div>
+          <div class="contest-slide">
+            <img src="asset\SOA\étudiant.png" alt="Concours 2">
+          </div>
+        </div>
+        <button class="contest-btn prev" onclick="changeContestSlide(-1)">❮</button>
+        <button class="contest-btn next" onclick="changeContestSlide(1)">❯</button>
+      </div>
+
+      <div class="contest-info">
+        <h3 class="contest-info-title">concours d'entrée à l'ENIET de soa - session 2025</h3>
+        <p class="contest-info-desc">ouvert aux titulaire du probatoire, GCE O Level et diplôme équivalents</p>
+
+        <div class="contest-columns">
+          <div class="contest-col">
+            <div class="contest-info-item">
+              <div class="contest-info-icon">
+                <img src="asset\calendrier.png" alt="Inscriptions" class="contest-info-icon-img">
+              </div>
+              <div class="contest-info-text">
+                <span class="contest-info-label">date des inscriptions</span>
+                <span class="contest-info-value">du 15 avril au 15 juin 2024</span>
+              </div>
+            </div>
+
+            <div class="contest-info-item">
+              <div class="contest-info-icon">
+                <img src="asset\time.png" alt="Date concours" class="contest-info-icon-img">
+              </div>
+              <div class="contest-info-text">
+                <span class="contest-info-label">date du concours</span>
+                <span class="contest-info-value">samedi 20 juillet 2025</span>
+              </div>
+            </div>
+
+            <div class="contest-info-item">
+              <div class="contest-info-icon">
+                <img src="asset\localisation.png" alt="Centre" class="contest-info-icon-img">
+              </div>
+              <div class="contest-info-text">
+                <span class="contest-info-label">centre de composition</span>
+                <span class="contest-info-value">Yaoundé, Douala, Bafoussam, Garoua, Maroua, Bertoua, Ebolowa etc.</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-arrete">télécharger l'arrêté</a>
+          </div>
+
+          <div class="contest-col">
+            <div class="contest-options">
+              <div class="contest-option-item">
+                <p class="contest-option-title">
+                  <span class="contest-option-icon"><img src="asset\ecole.png" alt=""></span>
+                  Frais d'inscription
+                </p>
+                <p class="contest-option-desc">10 000FCFA</p>
+              </div>
+              <div class="contest-option-item">
+                <p class="contest-option-title">
+                  <span class="contest-option-icon"><img src="asset\filiere.png" alt=""></span>
+                  Télécharger l'arrété
+                </p>
+                <p class="contest-option-desc">arrété n°024/MNESEC du 1004/2024</p>
+              </div>
+              <div class="contest-option-item">
+                <p class="contest-option-title">
+                  <span class="contest-option-icon"><img src="asset\INFO.png" alt=""></span>
+                  Dossier à fournir
+                </p>
+                <p class="contest-option-desc">Consulter la liste des pièces à fournir</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-more">en savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="online-forms-section">
+    <h2 class="forms-title">formu<span class="forms-underline">laires en</span> ligne</h2>
+    <div class="forms-container">
+      <div class="form-card">
+        <div class="form-card-inner">
+          <div class="form-icon">
+            <img src="asset\icons8-étudiant-50.png" alt="Inscription" class="form-icon-img">
+          </div>
+          <div class="form-content">
+            <p class="form-line form-bold">Formulaire d'inscription</p>
+            <p class="form-line">Remplissage en ligne obligatoire</p>
+            <p class="form-line">Durée: environ 15 minutes</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-form">remplir maintenant</a>
+      </div>
+
+      <div class="form-card">
+        <div class="form-card-inner">
+          <div class="form-icon">
+            <img src="asset\fiche.png" alt="Fiche" class="form-icon-img">
+          </div>
+          <div class="form-content">
+            <p class="form-line form-bold">Fiche étudiante</p>
+            <p class="form-line">Téléchargement et dépôt</p>
+            <p class="form-line">Format PDF accepté</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-form">remplir maintenant</a>
+      </div>
+
+      <div class="form-card">
+        <div class="form-card-inner">
+          <div class="form-icon">
+            <img src="asset\dossier.png" alt="Dossier" class="form-icon-img">
+          </div>
+          <div class="form-content">
+            <p class="form-line form-bold">Dossier de candidature</p>
+            <p class="form-line">Constitution du dossier complet</p>
+            <p class="form-line">Dépôt physique ou en ligne</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-form">remplir maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-container">
+      <div class="info-left">
+        <div class="info-header">
+          <div class="info-icon">
+            <img src="asset\about.png" alt="Informations" class="info-icon-img">
+          </div>
+          <h2 class="info-title">informations importantes</h2>
+        </div>
+        <div class="info-content">
+          <p class="info-text">Les candidats doivent déposer leur dossier complet au service de la scolarité avant la date limite.</p>
+          <p class="info-text">Toute documentation incomplète ou frauduleuse entraînera le rejet automatique du dossier.</p>
+          <p class="info-text">Pour toute question, contactez-nous au (+237) 673 45 67 89 ou par email à contact@inietsoa.com</p>
+        </div>
+      </div>
+      <div class="info-side-icon">
+        <img src="asset\note.png" alt="" class="info-side-icon-img">
+      </div>
+    </div>
+  </section>
+
+  <script>
+       let slideIndex = 1;
+       let slideTimer;
+       let partnerSlideIndex = 1;
+
+       function changeSlide(n) {
+         clearTimeout(slideTimer);
+         showSlide(slideIndex += n);
+         startAutoSlide();
+       }
+
+       function currentSlide(n) {
+         clearTimeout(slideTimer);
+         showSlide(slideIndex = n);
+         startAutoSlide();
+       }
+
+       function showSlide(n) {
+         let slides = document.getElementsByClassName("carousel-slide");
+         let dots = document.getElementsByClassName("dot");
+
+         if (n > slides.length) {
+           slideIndex = 1;
+         }
+         if (n < 1) {
+           slideIndex = slides.length;
+         }
+
+         for (let i = 0; i < slides.length; i++) {
+           slides[i].classList.remove("active");
+         }
+         for (let i = 0; i < dots.length; i++) {
+           dots[i].classList.remove("active");
+         }
+
+         slides[slideIndex - 1].classList.add("active");
+         dots[slideIndex - 1].classList.add("active");
+       }
+
+       function startAutoSlide() {
+         slideTimer = setTimeout(() => {
+           slideIndex++;
+           showSlide(slideIndex);
+           startAutoSlide();
+         }, 5000);
+       }
+
+       function changePartnerSlide(n) {
+         showPartnerSlide(partnerSlideIndex += n);
+       }
+
+       function currentPartnerSlide(n) {
+         showPartnerSlide(partnerSlideIndex = n);
+       }
+
+  function showPartnerSlide(n) {
+         let slides = document.getElementsByClassName("partner-slide");
+         let dots = document.getElementsByClassName("partner-dot");
+
+         if (n > slides.length) {
+           partnerSlideIndex = 1;
+         }
+         if (n < 1) {
+           partnerSlideIndex = slides.length;
+         }
+
+         for (let i = 0; i < slides.length; i++) {
+           slides[i].classList.remove("active");
+         }
+         for (let i = 0; i < dots.length; i++) {
+           dots[i].classList.remove("active");
+         }
+
+         slides[partnerSlideIndex - 1].classList.add("active");
+         if (dots[partnerSlideIndex - 1]) {
+           dots[partnerSlideIndex - 1].classList.add("active");
+         }
+       }
+
+       let partnerAutoTimer;
+       function startPartnerAutoSlide() {
+         partnerAutoTimer = setTimeout(() => {
+           partnerSlideIndex++;
+           showPartnerSlide(partnerSlideIndex);
+           startPartnerAutoSlide();
+         }, 3000);
+       }
+
+       showSlide(slideIndex);
+       startAutoSlide();
+       showPartnerSlide(partnerSlideIndex);
+       startPartnerAutoSlide();
+    </script>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column footer-brand">
+        <div class="footer-logo-group">
+          <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="footer-logo">
+          <div class="footer-brand-text">
+            <p class="footer-title">INIET DE SOA</p>
+            <p class="footer-subtitle">Ecole National d'instituteurs de</p>
+            <p class="footer-subtitle">l'enseignement Technique</p>
+          </div>
+        </div>
+        <p class="footer-desc">Former des professionnelles compétentes</p>
+        <p class="footer-desc">pour bâtir le Cameroun de demain</p>
+        <div class="footer-social">
+          <a href="#"><img src="asset/facebook.png" alt="Facebook" class="footer-social-icon"></a>
+          <a href="#"><img src="asset/youtube.png" alt="YouTube" class="footer-social-icon"></a>
+          <a href="#"><img src="asset\mail.png" alt="Gmail" class="footer-social-icon"></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">LIEN RAPIDES</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="#">Filière</a></li>
+          <li><a href="#">Informations</a></li>
+          <li><a href="#">Partenaires</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">INFORMATIONS</h4>
+        <ul class="footer-links">
+          <li><a href="#"><img src="asset/localisation.png" alt="Localisation" class="footer-icon"> route de SOA, Département de la Mefou et Akono, Region du centre</a></li>
+          <li><a href="#"><img src="asset/postale.png" alt="Boîte postale" class="footer-icon"> BP 123 SOA</a></li>
+          <li><a href="#"><img src="asset/contact.png" alt="Téléphone" class="footer-icon"> (+237) 673 45 67 89</a></li>
+          <li><a href="#"><img src="asset/mail.png" alt="Email" class="footer-icon"> contact@inietsoa.com</a></li>
+          <li><a href="#"><img src="asset/time.png" alt="Horaires" class="footer-icon"> Lun-Sam: 8h-16h</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-map">
+        <h4 class="footer-heading">ENIET DE SOA</h4>
+        <div class="footer-map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.6592038943737!2d11.4324!3d3.8743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTUnMzEuOCJOIDExwrAzMScwNC40IkU!5e0!3m2!1sfr!2scm!4v1698000000000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="footer-map-marker">
+            <span class="footer-map-tooltip">ENIET DE SOA</span>
+          </div>
+        </div>
+        <button class="btn btn-map">Voir sur la carte</button>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <span>© 2026 ENIET de SOA - tous droits réservés</span>
+      </div>
+      <div class="footer-legal">
+        <a href="#">Mention légales</a>
+        <span class="footer-divider-vertical"></span>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

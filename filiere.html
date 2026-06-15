@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filière - ENIET DE SOA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="filiere.css">
+  <link rel="stylesheet" href="filiere.css">
+</head>
+<body>
+  <div class="super-header">
+    <div class="super-header-left">
+      <div class="super-marquee">
+        <div class="marquee-content">
+          <span class="super-item">
+            <img src="asset/contact.png" alt="Téléphone" class="super-icon">
+            <span>(+237) 673 45 67 89</span>
+          </span>
+          <span class="super-item">
+            <img src="asset/localisation.png" alt="Localisation" class="super-icon">
+            <span>SOA, Cameroun</span>
+          </span>
+        </div>
+      </div>
+      <div class="super-item super-email">
+        <img src="asset/mail.png" alt="Email" class="super-icon">
+        <span>contact@inietsoa.com</span>
+      </div>
+    </div>
+    <div class="super-header-right">
+      <a href="#" class="social-link" aria-label="Facebook">
+        <img src="asset/facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="#" class="social-link" aria-label="YouTube">
+        <img src="asset/youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <a href="#" class="social-link" aria-label="Email">
+        <img src="asset/mail.png" alt="Email" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="logo-section">
+      <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="logo-img">
+      <div class="logo-text">
+        <h1>ENIET DE SOA</h1>
+        <p class="subtitle-1">Ecole Normale d'Instituteur</p>
+        <p class="subtitle-2">de l'Enseignement Technique</p>
+      </div>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button" aria-label="Ouvrir le menu">
+      <img src="asset/menu.png" alt="Menu" class="menu-icon">
+    </label>
+    <label for="menu-toggle" class="drawer-overlay"></label>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-item">
+        <img src="asset/home.png" alt="" class="nav-icon">
+        <span>Accueil</span>
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/ecole.png" alt="" class="nav-icon">
+          <span>L'école</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="ecole.html">Présentation générale</a>
+          <a href="#">Rôle de l'ENIET</a>
+        </div>
+      </details>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/AD.png" alt="" class="nav-icon">
+          <span>Admission</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="admission.html">Concours d'entrée</a>
+          <a href="#">Admission par étude de dossier</a>
+          <a href="#">Résultat</a>
+          <a href="#">Vie estudiantine</a>
+          <a href="#">Fiche étudiante</a>
+        </div>
+      </details>
+      <a href="filiere.html" class="nav-item active">
+        <img src="asset/filiere.png" alt="" class="nav-icon">
+        <span>Filière</span>
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/INFO.png" alt="" class="nav-icon">
+          <span>Informations</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="#">Communiqués</a>
+          <a href="#">Note d'information</a>
+          <a href="#">Décisions</a>
+          <a href="#">Arréªtés</a>
+          <a href="#">Concours</a>
+          <a href="#">Résultat</a>
+          <a href="#">Archives</a>
+        </div>
+      </details>
+      <a href="#" class="nav-item">
+        <img src="asset/icons8-partenariat-50.png" alt="" class="nav-icon">
+        <span>Partenaires</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="asset/contact.png" alt="" class="nav-icon">
+        <span>Contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/étudiant.png" alt="Slide 1">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/ETUDIANTS.png" alt="Slide 2">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/REP.png" alt="Slide 3">
+        </div>
+      </div>
+
+      <div class="carousel-text">
+        <p class="filiere-title"><span class="filiere-underline">filières</span> de formation</p>
+        <p class="filiere-desc">Des formations professionnelles pour former des instituteurs techniques</p>
+        <p class="filiere-desc">compétents, innovants, et adaptés aux besoins de développement</p>
+        <nav class="filiere-breadcrumb">
+          <a href="index.html" class="breadcrumb-home">accueil</a>
+          <img src="asset/next.png" alt="" class="breadcrumb-separator">
+          <span class="breadcrumb-current">filière</span>
+        </nav>
+      </div>
+
+      <button class="carousel-btn prev" onclick="changeSlide(-1)"><img src="asset/pres.png" alt="Précédent"></button>
+      <button class="carousel-btn next" onclick="changeSlide(1)"><img src="asset/next.png" alt="Suivant"></button>
+
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </main>
+
+  <section class="filieres-section">
+    <h2 class="filieres-title">nos <span class="filieres-underline">filières</span> de formation</h2>
+    <p class="filieres-desc">Découvrez nos différentes filières de formation adaptées à vos ambitions.</p>
+    <p class="filieres-desc">Des programmes concrets pour une insertion professionnelle réussie.</p>
+  </section>
+
+  <section class="all-filieres-section">
+    <div class="all-filieres-container">
+      <div class="filieres-left">
+        <h2 class="all-filieres-title">toutes nos <span class="all-filieres-underline">filières</span></h2>
+        <div class="filieres-cards-list">
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\icons8-étudiant-50.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Électricité</h3>
+              <p class="filiere-card-desc">Installation et maintenance des systèmes électriques</p>
+              <p class="filiere-card-desc">Domotique et automatisme</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\filiere.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Mécanique</h3>
+              <p class="filiere-card-desc">Conception et réparation mécanique</p>
+              <p class="filiere-card-desc">Maintenance industrielle</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\AD.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Bâtiment</h3>
+              <p class="filiere-card-desc">Construction et gestion de chantier</p>
+              <p class="filiere-card-desc">Topographie et devis</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\INFO.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Informatique</h3>
+              <p class="filiere-card-desc">Réseaux et systèmes informatiques</p>
+              <p class="filiere-card-desc">Développement web et applications</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\ecole.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Comptabilité</h3>
+              <p class="filiere-card-desc">Gestion comptable et financière</p>
+              <p class="filiere-card-desc">Fiscalité et audit</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\fiche.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Secrétariat</h3>
+              <p class="filiere-card-desc">Gestion administrative et bureautique</p>
+              <p class="filiere-card-desc">Communication professionnelle</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\calendrier.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Agriculture</h3>
+              <p class="filiere-card-desc">Techniques agricoles modernes</p>
+              <p class="filiere-card-desc">Élevage et agro-business</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+
+          <div class="filiere-card-item">
+            <div class="filiere-card-icon">
+              <img src="asset\dossier.png" alt="" class="filiere-card-icon-img">
+            </div>
+            <div class="filiere-card-content">
+              <h3 class="filiere-card-name">Tourisme</h3>
+              <p class="filiere-card-desc">Gestion hôtelière et accueil</p>
+              <p class="filiere-card-desc">Guide touristique et animation</p>
+            </div>
+            <span class="filiere-card-arrow"><img src="asset/next.png" alt=""></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filieres-right">
+        <div class="filieres-detail">
+          <h3 class="filieres-detail-title">électricité</h3>
+          <p class="filieres-detail-text">Formation aux métiers de l'électricité industrielle et domestique.</p>
+          <p class="filieres-detail-text">Apprenez à installer, maintenir et dépanner les systèmes électriques.</p>
+          <p class="filieres-detail-text">Accès aux réseaux, automatismes et énergies renouvelables.</p>
+
+          <div class="filieres-mini-cards">
+            <div class="filieres-mini-card">
+              <div class="filieres-mini-icon">
+                <img src="asset\icons8-étudiant-50.png" alt="" class="filieres-mini-icon-img">
+              </div>
+              <h4 class="filieres-mini-title">Installation</h4>
+              <p class="filieres-mini-desc">Câblage, tableau électrique, mise en service</p>
+            </div>
+            <div class="filieres-mini-card">
+              <div class="filieres-mini-icon">
+                <img src="asset\filiere.png" alt="" class="filieres-mini-icon-img">
+              </div>
+              <h4 class="filieres-mini-title">Maintenance</h4>
+              <p class="filieres-mini-desc">Diagnostic, réparation, entretien préventif</p>
+            </div>
+            <div class="filieres-mini-card">
+              <div class="filieres-mini-icon">
+                <img src="asset\INFO.png" alt="" class="filieres-mini-icon-img">
+              </div>
+              <h4 class="filieres-mini-title">Automatisme</h4>
+              <p class="filieres-mini-desc">PLC, SCADA, domotique et IoT</p>
+            </div>
+          </div>
+
+          <div class="filieres-image-card">
+            <img src="asset\SOA\ETUDIANTS.png" alt="Électricité" class="filieres-image">
+          </div>
+        </div>
+
+        <div class="filieres-columns">
+          <div class="filieres-column">
+            <h4 class="filieres-column-title">conditions d'admission</h4>
+            <p class="filieres-column-text">Pour être admis en filière électricité, le candidat doit:</p>
+            <div class="filieres-checklist">
+              <p class="filieres-check-item"><span class="filieres-check-icon">✓</span> Être titulaire du Baccalauréat ou équivalent</p>
+              <p class="filieres-check-item"><span class="filieres-check-icon">✓</span> Avoir un bon niveau en mathématiques et physique</p>
+              <p class="filieres-check-item"><span class="filieres-check-icon">✓</span> Déposer un dossier complet de candidature</p>
+              <p class="filieres-check-item"><span class="filieres-check-icon">✓</span> Réussir le concours d'entrée</p>
+            </div>
+            <div class="filieres-bottom-cards">
+              <div class="filieres-bottom-card filieres-gray-card">
+                <div class="filieres-bottom-icon">
+                  <img src="asset\icons8-étudiant-50.png" alt="" class="filieres-bottom-icon-img">
+                </div>
+                <div class="filieres-bottom-content">
+                  <h5 class="filieres-bottom-title">Formation pratique</h5>
+                  <p class="filieres-bottom-desc">Ateliers équipés et stages en entreprise</p>
+                  <p class="filieres-bottom-desc">Encadrement par des professionnels</p>
+                </div>
+              </div>
+              <div class="filieres-bottom-card filieres-yellow-card">
+                <div class="filieres-bottom-icon">
+                  <img src="asset\fiche.png" alt="" class="filieres-bottom-icon-img">
+                </div>
+                <div class="filieres-bottom-content">
+                  <h5 class="filieres-bottom-title">télécharger la brochure (PDF)</h5>
+                  <p class="filieres-bottom-desc">Programme détaillé et modalités</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filieres-column">
+            <h4 class="filieres-column-title">unité d'enseignement</h4>
+            <ul class="filieres-list">
+              <li>Électricité fondamentale</li>
+              <li>Électronique analogique</li>
+              <li>Automatismes industriels</li>
+              <li>Réseaux électriques</li>
+              <li>Énergies renouvelables</li>
+            </ul>
+          </div>
+
+          <div class="filieres-column">
+            <h4 class="filieres-column-title">diplôme obtenu</h4>
+            <ul class="filieres-list">
+              <li>BTS en Électrotechnique</li>
+              <li>Licence professionnelle</li>
+              <li>Diplôme d'État d'Instituteur</li>
+            </ul>
+          </div>
+
+          <div class="filieres-column">
+            <h4 class="filieres-column-title">débouché</h4>
+            <ul class="filieres-list">
+              <li>Technicien électrique</li>
+              <li>Responsable de maintenance</li>
+              <li>Automaticien</li>
+              <li>Chef de chantier électrique</li>
+              <li>Entrepreneur en électricité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="key-stats-section">
+    <div class="key-stats-container">
+      <div class="key-stat-card">
+        <div class="key-stat-icon">
+          <img src="asset\SCHOOL.png" alt="Année" class="key-stat-icon-img">
+        </div>
+        <div class="key-stat-content">
+          <span class="key-stat-number">1991</span>
+          <span class="key-stat-label">Année de création</span>
+        </div>
+      </div>
+
+      <div class="key-stat-card">
+        <div class="key-stat-icon">
+          <img src="asset\filiere.png" alt="Filières" class="key-stat-icon-img">
+        </div>
+        <div class="key-stat-content">
+          <span class="key-stat-number">8</span>
+          <span class="key-stat-label">Filières de formation</span>
+        </div>
+      </div>
+
+      <div class="key-stat-card">
+        <div class="key-stat-icon">
+          <img src="asset\icons8-étudiant-50.png" alt="Étudiants" class="key-stat-icon-img">
+        </div>
+        <div class="key-stat-content">
+          <span class="key-stat-number">1500+</span>
+          <span class="key-stat-label">Étudiants formés</span>
+        </div>
+      </div>
+
+      <div class="key-stat-card">
+        <div class="key-stat-icon">
+          <img src="asset\users.png" alt="Enseignants" class="key-stat-icon-img">
+        </div>
+        <div class="key-stat-content">
+          <span class="key-stat-number">80+</span>
+          <span class="key-stat-label">Enseignants qualifiés</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column footer-brand">
+        <div class="footer-logo-group">
+          <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="footer-logo">
+          <div class="footer-brand-text">
+            <p class="footer-title">INIET DE SOA</p>
+            <p class="footer-subtitle">Ecole National d'instituteurs de</p>
+            <p class="footer-subtitle">l'enseignement Technique</p>
+          </div>
+        </div>
+        <p class="footer-desc">Former des professionnelles compétentes</p>
+        <p class="footer-desc">pour bâtir le Cameroun de demain</p>
+        <div class="footer-social">
+          <a href="#"><img src="asset/facebook.png" alt="Facebook" class="footer-social-icon"></a>
+          <a href="#"><img src="asset/youtube.png" alt="YouTube" class="footer-social-icon"></a>
+          <a href="#"><img src="asset\mail.png" alt="Gmail" class="footer-social-icon"></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">LIEN RAPIDES</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ecole.html">L'école</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="filiere.html">Filière</a></li>
+          <li><a href="#">Informations</a></li>
+          <li><a href="#">Partenaires</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-heading">INFORMATIONS</h4>
+        <ul class="footer-links">
+          <li><a href="#"><img src="asset/localisation.png" alt="Localisation" class="footer-icon"> route de SOA, Département de la Mefou et Akono, Region du centre</a></li>
+          <li><a href="#"><img src="asset/postale.png" alt="Boîte postale" class="footer-icon"> BP 123 SOA</a></li>
+          <li><a href="#"><img src="asset/contact.png" alt="Téléphone" class="footer-icon"> (+237) 673 45 67 89</a></li>
+          <li><a href="#"><img src="asset/mail.png" alt="Email" class="footer-icon"> contact@inietsoa.com</a></li>
+          <li><a href="#"><img src="asset/time.png" alt="Horaires" class="footer-icon"> Lun-Sam: 8h-16h</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column footer-map">
+        <h4 class="footer-heading">ENIET DE SOA</h4>
+        <div class="footer-map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.6592038943737!2d11.4324!3d3.8743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTUnMzEuOCJOIDExwrAzMScwNC40IkU!5e0!3m2!1sfr!2scm!4v1698000000000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="footer-map-marker">
+            <span class="footer-map-tooltip">ENIET DE SOA</span>
+          </div>
+        </div>
+        <button class="btn btn-map">Voir sur la carte</button>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <span>© 2026 ENIET de SOA - tous droits réservés</span>
+      </div>
+      <div class="footer-legal">
+        <a href="#">Mention légales</a>
+        <span class="footer-divider-vertical"></span>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+       let slideIndex = 1;
+       let slideTimer;
+       let partnerSlideIndex = 1;
+
+       function changeSlide(n) {
+         clearTimeout(slideTimer);
+         showSlide(slideIndex += n);
+         startAutoSlide();
+       }
+
+       function currentSlide(n) {
+         clearTimeout(slideTimer);
+         showSlide(slideIndex = n);
+         startAutoSlide();
+       }
+
+       function showSlide(n) {
+         let slides = document.getElementsByClassName("carousel-slide");
+         let dots = document.getElementsByClassName("dot");
+
+         if (n > slides.length) {
+           slideIndex = 1;
+         }
+         if (n < 1) {
+           slideIndex = slides.length;
+         }
+
+         for (let i = 0; i < slides.length; i++) {
+           slides[i].classList.remove("active");
+         }
+         for (let i = 0; i < dots.length; i++) {
+           dots[i].classList.remove("active");
+         }
+
+         slides[slideIndex - 1].classList.add("active");
+         dots[slideIndex - 1].classList.add("active");
+       }
+
+       function startAutoSlide() {
+         slideTimer = setTimeout(() => {
+           slideIndex++;
+           showSlide(slideIndex);
+           startAutoSlide();
+         }, 5000);
+       }
+
+       function changePartnerSlide(n) {
+         showPartnerSlide(partnerSlideIndex += n);
+       }
+
+       function currentPartnerSlide(n) {
+         showPartnerSlide(partnerSlideIndex = n);
+       }
+
+  function showPartnerSlide(n) {
+         let slides = document.getElementsByClassName("partner-slide");
+         let dots = document.getElementsByClassName("partner-dot");
+
+         if (n > slides.length) {
+           partnerSlideIndex = 1;
+         }
+         if (n < 1) {
+           partnerSlideIndex = slides.length;
+         }
+
+         for (let i = 0; i < slides.length; i++) {
+           slides[i].classList.remove("active");
+         }
+         for (let i = 0; i < dots.length; i++) {
+           dots[i].classList.remove("active");
+         }
+
+         slides[partnerSlideIndex - 1].classList.add("active");
+         if (dots[partnerSlideIndex - 1]) {
+           dots[partnerSlideIndex - 1].classList.add("active");
+         }
+       }
+
+       let partnerAutoTimer;
+       function startPartnerAutoSlide() {
+         partnerAutoTimer = setTimeout(() => {
+           partnerSlideIndex++;
+           showPartnerSlide(partnerSlideIndex);
+           startPartnerAutoSlide();
+         }, 3000);
+       }
+
+       showSlide(slideIndex);
+       startAutoSlide();
+       showPartnerSlide(partnerSlideIndex);
+       startPartnerAutoSlide();
+    </script>
+</body>
+</html>
