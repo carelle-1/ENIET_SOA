@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informations - ENIET DE SOA</title>
+  <title>Informations - INIET DE SOA</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="ecole.css">
+  <link rel="stylesheet" href="information.css">
 </head>
 <body>
   <div class="super-header">
@@ -24,7 +25,7 @@
       </div>
       <div class="super-item super-email">
         <img src="asset/mail.png" alt="Email" class="super-icon">
-        <span>contact@inietsoa.com</span>
+        <span>contact@INIETsoa.com</span>
       </div>
     </div>
     <div class="super-header-right">
@@ -44,7 +45,7 @@
     <div class="logo-section">
       <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="logo-img">
       <div class="logo-text">
-        <h1>ENIET DE SOA</h1>
+        <h1>INIET DE SOA</h1>
         <p class="subtitle-1">Ecole Normale d'Instituteur</p>
         <p class="subtitle-2">de l'Enseignement Technique</p>
       </div>
@@ -66,7 +67,7 @@
         </summary>
         <div class="dropdown-menu">
           <a href="ecole.html">Présentation générale</a>
-          <a href="#">Rôle de l'ENIET</a>
+          <a href="#">Rôle de l'INIET</a>
         </div>
       </details>
       <details class="dropdown">
@@ -101,7 +102,7 @@
           <a href="#">Archives</a>
         </div>
       </details>
-      <a href="#" class="nav-item">
+      <a href="partenaire.html" class="nav-item">
         <img src="asset/icons8-partenariat-50.png" alt="" class="nav-icon">
         <span>Partenaires</span>
       </a>
@@ -127,18 +128,14 @@
       </div>
 
       <div class="carousel-text">
-        <p class="title">Bienvenue à&nbsp;l'INIET de&nbsp;SOA</p>
-        <p class="highlight-white">former des professionnels</p>
-        <p class="highlight-white">competent pou bâtir</p>
-        <p class="highlight-yellow">le Cameroun de demain</p>
-        <hr class="carousel-divider">
-        <p class="highlight-white">Excellence - Discipline - Engagement - innovation</p>
-        <p class="highlight-white">au service de la formation des instituteurs</p>
-        <p class="highlight-white">de l'enseignement technique</p>
-        <div class="carousel-buttons">
-          <a href="#" class="btn btn-primary">Découvrir l'ENIET</a>
-          <a href="#" class="btn btn-secondary">concours en cours</a>
-        </div>
+        <p class="info-title"><span class="info-underline">informations</span> officielles</p>
+        <p class="info-desc">retrouver ici toutes les communiqués, décisions, notes d'information, arrêtés</p>
+        <p class="info-desc">concours et résultats officiels de l'INIET de soa</p>
+        <nav class="info-breadcrumb">
+          <a href="index.html" class="breadcrumb-home">accueil</a>
+          <img src="asset/next.png" alt="" class="breadcrumb-separator">
+          <span class="breadcrumb-current">informations</span>
+        </nav>
       </div>
 
       <button class="carousel-btn prev" onclick="changeSlide(-1)"><img src="asset/pres.png" alt="Précédent"></button>
@@ -152,49 +149,291 @@
     </div>
   </main>
 
-  <section class="partners-section">
-    <h2 class="partners-title">Nos partenaires<span class="partners-underline"></span></h2>
-    <div class="partners-slider-container">
-      <button class="partner-btn prev" onclick="changePartnerSlide(-1)"><img src="asset/pres.png" alt="Précédent"></button>
-      <div class="partners-slider">
-        <div class="partner-slide active">
-          <div class="partner-item">
-            <img src="asset/SOA/MINISEC.png" alt="Partenaire 1" class="partner-logo">
-            <h4 class="partner-name">MINESEC</h4>
-            <p class="partner-desc">Partenaire académique pour l'enseignement supérieur et la recherche</p>
-          </div>
-          <div class="partner-item">
-            <img src="asset/SOA/MINEFOP.png" alt="Partenaire 2" class="partner-logo">
-            <h4 class="partner-name">MINEFOP</h4>
-            <p class="partner-desc">Ministère de la Formation Professionnelle</p>
-          </div>
-          <div class="partner-item">
-            <img src="asset/SOA/UNESCO.jpg" alt="Partenaire 3" class="partner-logo">
-            <h4 class="partner-name">UNESCO</h4>
-            <p class="partner-desc">Organisation des Nations Unies</p>
-          </div>
-          <div class="partner-item">
-            <img src="asset/SOA/giz.jpg" alt="Partenaire 4" class="partner-logo">
-            <h4 class="partner-name">GIZ</h4>
-            <p class="partner-desc">Partenaire allemand pour le développement</p>
-          </div>
-          <div class="partner-item">
-            <img src="asset/SOA/AFD.png" alt="Partenaire 5" class="partner-logo">
-            <h4 class="partner-name">AFD</h4>
-            <p class="partner-desc">Agence Française de Développement</p>
-          </div>
-          <div class="partner-item">
-            <img src="asset/SOA/CAMTEL.png" alt="Partenaire 6" class="partner-logo">
-            <h4 class="partner-name">CAMTEL</h4>
-            <p class="partner-desc">Télécommunications Cameroun</p>
-          </div>
+  <section class="info-cards-section">
+    <div class="info-cards-container">
+      <div class="info-card" style="--card-color: #1f4d2b;">
+        <div class="info-card-icon">
+          <img src="asset\icons8-document-50.png" alt="Communiqués" class="info-card-icon-img">
         </div>
+        <h3 class="info-card-title">Communiqués</h3>
+        <p class="info-card-subtitle">Publications officielles de l'école</p>
       </div>
-      <button class="partner-btn next" onclick="changePartnerSlide(1)"><img src="asset/next.png" alt="Suivant"></button>
+
+      <div class="info-card" style="--card-color: #2c7bb6;">
+        <div class="info-card-icon">
+          <img src="asset\INFO.png" alt="Notes d'information" class="info-card-icon-img">
+        </div>
+        <h3 class="info-card-title">Notes d'information</h3>
+        <p class="info-card-subtitle">Informations importantes pour les étudiants</p>
+      </div>
+
+      <div class="info-card" style="--card-color: #8e44ad;">
+        <div class="info-card-icon">
+          <img src="asset\admis.png" alt="Décisions" class="info-card-icon-img">
+        </div>
+        <h3 class="info-card-title">Décisions</h3>
+        <p class="info-card-subtitle">Décisions du conseil d'administration</p>
+      </div>
+
+      <div class="info-card" style="--card-color: #c0392b;">
+        <div class="info-card-icon">
+          <img src="asset\calendrier.png" alt="Arrêtés" class="info-card-icon-img">
+        </div>
+        <h3 class="info-card-title">Arrêtés</h3>
+        <p class="info-card-subtitle">Textes réglementaires et officiels</p>
+      </div>
+
+      <div class="info-card" style="--card-color: #d35400;">
+        <div class="info-card-icon">
+          <img src="asset\fiche.png" alt="Concours" class="info-card-icon-img">
+        </div>
+        <h3 class="info-card-title">Concours</h3>
+        <p class="info-card-subtitle">Calendrier et conditions de participation</p>
+      </div>
+
+      <div class="info-card" style="--card-color: #16a085;">
+        <div class="info-card-icon">
+          <img src="asset\users.png" alt="Résultats" class="info-card-icon-img">
+        </div>
+        <h3 class="info-card-title">Résultats</h3>
+        <p class="info-card-subtitle">Résultats des examens et concours</p>
+      </div>
     </div>
   </section>
 
-  <section class="key-stats-section">
+  <section class="info-layout-section">
+    <div class="info-layout-container">
+      <!-- Colonne gauche : filtres -->
+      <div class="info-filters-col">
+      <div class="filter-block">
+        <h3 class="filter-title"><span class="filter-underline">filtrer</span> par catégorie</h3>
+        <div class="filter-category-stats">
+          <span class="filter-cat-text filter-cat-active">toutes les informations</span>
+          <span class="filter-cat-badge">75</span>
+        </div>
+        <div class="filter-cat-list">
+          <div class="filter-cat-item">
+            <span>communiqués</span>
+            <span class="filter-cat-count">12</span>
+          </div>
+          <div class="filter-cat-item">
+            <span>décisions</span>
+            <span class="filter-cat-count">0</span>
+          </div>
+          <div class="filter-cat-item">
+            <span>notes d'informations</span>
+            <span class="filter-cat-count">15</span>
+          </div>
+          <div class="filter-cat-item">
+            <span>arrêtés</span>
+            <span class="filter-cat-count">10</span>
+          </div>
+          <div class="filter-cat-item">
+            <span>résultats concours</span>
+            <span class="filter-cat-count">10</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <h3 class="filter-title"><span class="filter-underline">filtrer</span> par année</h3>
+        <div class="filter-year-stats">
+          <span class="filter-year-text filter-year-active">2024</span>
+          <span class="filter-year-badge">24</span>
+        </div>
+        <div class="filter-year-list">
+          <div class="filter-year-item">
+            <span>2023</span>
+            <span class="filter-year-count">18</span>
+          </div>
+          <div class="filter-year-item">
+            <span>2022</span>
+            <span class="filter-year-count">16</span>
+          </div>
+          <div class="filter-year-item">
+            <span>2021</span>
+            <span class="filter-year-count">8</span>
+          </div>
+          <div class="filter-year-item">
+            <span>2020 et avant</span>
+            <span class="filter-year-count">4</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <h3 class="filter-title-bold">rechercher</h3>
+        <div class="search-box">
+          <input type="text" placeholder="Rechercher..." class="search-input">
+          <button class="search-btn">
+            <img src="asset/search.png" alt="Rechercher" class="search-icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="help-card">
+        <p class="help-title">besoin d'information ?</p>
+        <p class="help-text">Notre équipe est disponible pour répondre à toutes vos questions.</p>
+        <p class="help-text">Contactez-nous par téléphone ou email.</p>
+        <p class="help-text">Nous sommes là pour vous aider.</p>
+        <a href="#" class="btn btn-help">nous contactez <span class="arrow-right">→</span></a>
+      </div>
+    </div>
+
+    <!-- Colonne droite : contenu -->
+    <div class="info-content-col">
+      <div class="info-header-card">
+        <h2 class="info-header-title"><span class="info-header-underline">toutes</span> les informations</h2>
+        <div class="info-header-meta">
+          <span>trier pas : </span>
+          <select class="sort-select">
+            <option>date récente</option>
+            <option>date ancienne</option>
+            <option>pertinence</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="info-list">
+        <div class="info-list-item">
+          <div class="info-list-icon">
+            <img src="asset\icons8-document-50.png" alt="" class="info-list-icon-img">
+          </div>
+          <div class="info-list-content">
+            <h4 class="info-list-title">Communiqué officiel - Rentrée scolaire 2025</h4>
+            <p class="info-list-meta">Publié le 15 janvier 2025 • Communiqués</p>
+            <p class="info-list-excerpt">La rentrée scolaire pour l'année académique 2025 est prévue pour le 15 septembre...</p>
+          </div>
+          <div class="info-list-actions">
+            <div class="info-list-meta-list">
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\calendrier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">17 juin 2025</span>
+              </div>
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\dossier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">2.4 MB</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-download">télécharger</a>
+          </div>
+        </div>
+
+        <div class="info-list-item">
+          <div class="info-list-icon">
+            <img src="asset\calendrier.png" alt="" class="info-list-icon-img">
+          </div>
+          <div class="info-list-content">
+            <h4 class="info-list-title">Concours d'entrée - Session 2025</h4>
+            <p class="info-list-meta">Publié le 10 janvier 2025 • Concours</p>
+            <p class="info-list-excerpt">Le concours d'entrée à l'INIET de SOA aura lieu le 20 juillet 2025...</p>
+          </div>
+          <div class="info-list-actions">
+            <div class="info-list-meta-list">
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\calendrier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">17 juin 2025</span>
+              </div>
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\dossier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">2.4 MB</span>
+              </div>
+            </div>
+              <div class="info-stat-item">
+                <img src="asset\download.png" alt="" class="info-stat-icon">
+                <span>8</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-download">télécharger</a>
+          </div>
+        </div>
+
+        <div class="info-list-item">
+          <div class="info-list-icon">
+            <img src="asset\admis.png" alt="" class="info-list-icon-img">
+          </div>
+          <div class="info-list-content">
+            <h4 class="info-list-title">Résultats du concours 2024</h4>
+            <p class="info-list-meta">Publié le 5 décembre 2024 • Résultats</p>
+            <p class="info-list-excerpt">Les résultats du concours d'entrée 2024 sont maintenant disponibles...</p>
+          </div>
+          <div class="info-list-actions">
+            <div class="info-list-meta-list">
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\calendrier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">5 décembre 2024</span>
+              </div>
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\dossier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">1.8 MB</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-download">télécharger</a>
+          </div>
+        </div>
+
+        <div class="info-list-item">
+          <div class="info-list-icon">
+            <img src="asset\fiche.png" alt="" class="info-list-icon-img">
+          </div>
+          <div class="info-list-content">
+            <h4 class="info-list-title">Note d'information - Bourse d'études</h4>
+            <p class="info-list-meta">Publié le 28 novembre 2024 • Notes d'information</p>
+            <p class="info-list-excerpt">Une bourse d'études est disponible pour les étudiants méritants...</p>
+          </div>
+          <div class="info-list-actions">
+            <div class="info-list-meta-list">
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\calendrier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">28 novembre 2024</span>
+              </div>
+              <div class="info-meta-item">
+                <span class="info-meta-icon"><img src="asset\dossier.png" alt="" class="info-meta-icon-img"></span>
+                <span class="info-meta-text">0.9 MB</span>
+              </div>
+</div>
+             <a href="#" class="btn btn-download">télécharger</a>
+           </div>
+         </div>
+
+         <div class="info-list-item">
+           <div class="info-list-icon">
+             <img src="asset\dossier.png" alt="" class="info-list-icon-img">
+           </div>
+           <div class="info-list-content">
+             <h4 class="info-list-title">Arrêté ministériel - Réforme des programmes</h4>
+             <p class="info-list-meta">Publié le 15 octobre 2024 • Arrêtés</p>
+             <p class="info-list-excerpt">Nouvelle réforme des programmes de formation technique...</p>
+           </div>
+           <div class="info-list-actions">
+             <div class="info-list-meta-list">
+               <div class="info-meta-item">
+                 <span class="info-meta-icon"><img src="asset\calendrier.png" alt="" class="info-meta-icon-img"></span>
+                 <span class="info-meta-text">15 octobre 2024</span>
+               </div>
+               <div class="info-meta-item">
+                 <span class="info-meta-icon"><img src="asset\dossier.png" alt="" class="info-meta-icon-img"></span>
+                 <span class="info-meta-text">3.2 MB</span>
+               </div>
+             </div>
+             <a href="#" class="btn btn-download">télécharger</a>
+           </div>
+         </div>
+
+         <div class="pagination">
+           <button class="page-btn active">1</button>
+           <button class="page-btn">2</button>
+           <button class="page-btn">3</button>
+           <button class="page-btn">...</button>
+           <button class="page-btn">8</button>
+           <button class="page-btn next">suivant →</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+  <section class="partners-section">
     <div class="key-stats-container">
       <div class="key-stat-card">
         <div class="key-stat-icon">
@@ -245,8 +484,8 @@
           <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="footer-logo">
           <div class="footer-brand-text">
             <p class="footer-title">INIET DE SOA</p>
-            <p class="footer-subtitle">Ecole National d'instituteurs de</p>
-            <p class="footer-subtitle">l'enseignement Technique</p>
+            <p class="footer-subtitle">Ecole National d'Instituteurs de</p>
+            <p class="footer-subtitle">l'Enseignement Technique</p>
           </div>
         </div>
         <p class="footer-desc">Former des professionnelles compétentes</p>
@@ -266,7 +505,7 @@
           <li><a href="admission.html">Admission</a></li>
           <li><a href="filiere.html">Filière</a></li>
           <li><a href="information.html">Informations</a></li>
-          <li><a href="#">Partenaires</a></li>
+          <li><a href="partenaire.html">Partenaires</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -274,20 +513,20 @@
       <div class="footer-column">
         <h4 class="footer-heading">INFORMATIONS</h4>
         <ul class="footer-links">
-          <li><a href="#"><img src="asset/localisation.png" alt="Localisation" class="footer-icon"> route de SOA, Département de la Mefou et Akono, Region du centre</a></li>
+          <li><a href="#"><img src="asset/localisation.png" alt="Localisation" class="footer-icon"> route de SOA, Département de la Mefou et Afamba, Region du centre</a></li>
           <li><a href="#"><img src="asset/postale.png" alt="Boîte postale" class="footer-icon"> BP 123 SOA</a></li>
           <li><a href="#"><img src="asset/contact.png" alt="Téléphone" class="footer-icon"> (+237) 673 45 67 89</a></li>
-          <li><a href="#"><img src="asset/mail.png" alt="Email" class="footer-icon"> contact@inietsoa.com</a></li>
+          <li><a href="#"><img src="asset/mail.png" alt="Email" class="footer-icon"> contact@INIETsoa.com</a></li>
           <li><a href="#"><img src="asset/time.png" alt="Horaires" class="footer-icon"> Lun-Sam: 8h-16h</a></li>
         </ul>
       </div>
 
       <div class="footer-column footer-map">
-        <h4 class="footer-heading">ENIET DE SOA</h4>
+        <h4 class="footer-heading">INIET DE SOA</h4>
         <div class="footer-map-container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.6592038943737!2d11.4324!3d3.8743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTUnMzEuOCJOIDExwrAzMScwNC40IkU!5e0!3m2!1sfr!2scm!4v1698000000000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="footer-map-marker">
-            <span class="footer-map-tooltip">ENIET DE SOA</span>
+            <span class="footer-map-tooltip">INIET DE SOA</span>
           </div>
         </div>
         <button class="btn btn-map">Voir sur la carte</button>
@@ -298,12 +537,14 @@
 
     <div class="footer-bottom">
       <div class="footer-copyright">
-        <span>© 2026 ENIET de SOA - tous droits réservés</span>
+        <span>© 2026 INIET de SOA - tous droits réservés</span>
       </div>
       <div class="footer-legal">
         <a href="#">Mention légales</a>
         <span class="footer-divider-vertical"></span>
         <a href="#">Politique de confidentialité</a>
+        <span class="footer-divider-vertical"></span>
+          <a href="https://ghostroar.com/">by Ghostroar Digital</a>
       </div>
     </div>
   </footer>

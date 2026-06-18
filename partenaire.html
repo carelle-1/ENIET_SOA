@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partenaires - INIET DE SOA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="partenaire.css">
+</head>
+<body>
+  <div class="super-header">
+    <div class="super-header-left">
+      <div class="super-marquee">
+        <div class="marquee-content">
+          <span class="super-item">
+            <img src="asset/contact.png" alt="Téléphone" class="super-icon">
+            <span>(+237) 673 45 67 89</span>
+          </span>
+          <span class="super-item">
+            <img src="asset/localisation.png" alt="Localisation" class="super-icon">
+            <span>SOA, Cameroun</span>
+          </span>
+        </div>
+      </div>
+      <div class="super-item super-email">
+        <img src="asset/mail.png" alt="Email" class="super-icon">
+        <span>contact@INIETsoa.com</span>
+      </div>
+    </div>
+    <div class="super-header-right">
+      <a href="#" class="social-link" aria-label="Facebook">
+        <img src="asset/facebook.png" alt="Facebook" class="social-icon">
+      </a>
+      <a href="#" class="social-link" aria-label="YouTube">
+        <img src="asset/youtube.png" alt="YouTube" class="social-icon">
+      </a>
+      <a href="#" class="social-link" aria-label="Email">
+        <img src="asset/mail.png" alt="Email" class="social-icon">
+      </a>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="logo-section">
+      <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="logo-img">
+      <div class="logo-text">
+        <h1>INIET DE SOA</h1>
+        <p class="subtitle-1">Ecole Normale d'Instituteur</p>
+        <p class="subtitle-2">de l'Enseignement Technique</p>
+      </div>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-button" aria-label="Ouvrir le menu">
+      <img src="asset/menu.png" alt="Menu" class="menu-icon">
+    </label>
+    <label for="menu-toggle" class="drawer-overlay"></label>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-item">
+        <img src="asset/home.png" alt="" class="nav-icon">
+        <span>Accueil</span>
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/ecole.png" alt="" class="nav-icon">
+          <span>L'école</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="ecole.html">Présentation générale</a>
+          <a href="#">Rôle de l'INIET</a>
+        </div>
+      </details>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/AD.png" alt="" class="nav-icon">
+          <span>Admission</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="admission.html">Concours d'entrée</a>
+          <a href="#">Admission par étude de dossier</a>
+          <a href="#">Résultat</a>
+          <a href="#">Vie estudiantine</a>
+          <a href="#">Fiche étudiante</a>
+        </div>
+      </details>
+      <a href="filiere.html" class="nav-item">
+        <img src="asset/filiere.png" alt="" class="nav-icon">
+        <span>Filière</span>
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link nav-item">
+          <img src="asset/INFO.png" alt="" class="nav-icon">
+          <span>Informations</span>
+        </summary>
+        <div class="dropdown-menu">
+          <a href="information.html">Communiqués</a>
+          <a href="#">Note d'information</a>
+          <a href="#">Décisions</a>
+          <a href="#">Arréªtés</a>
+          <a href="#">Concours</a>
+          <a href="#">Résultat</a>
+          <a href="#">Archives</a>
+        </div>
+      </details>
+      <a href="partenaire.html" class="nav-item active">
+        <img src="asset/icons8-partenariat-50.png" alt="" class="nav-icon">
+        <span>Partenaires</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="asset/contact.png" alt="" class="nav-icon">
+        <span>Contact</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/étudiant.png" alt="Slide 1">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/ETUDIANTS.png" alt="Slide 2">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="asset/SOA/REP.png" alt="Slide 3">
+        </div>
+      </div>
+
+      <div class="carousel-text">
+        <p class="partenaire-title"><span class="partenaire-underline">partenaires</span></p>
+        <p class="partenaire-desc">Nos partenaires institutionnels et industriels</p>
+        <p class="partenaire-desc">pour une formation de qualité et une insertion professionnelle</p>
+        <nav class="partenaire-breadcrumb">
+          <a href="index.html" class="breadcrumb-home">accueil</a>
+          <img src="asset/next.png" alt="" class="breadcrumb-separator">
+          <span class="breadcrumb-current">partenaires</span>
+        </nav>
+      </div>
+
+      <button class="carousel-btn prev" onclick="changeSlide(-1)"><img src="asset/pres.png" alt="Précédent"></button>
+      <button class="carousel-btn next" onclick="changeSlide(1)"><img src="asset/next.png" alt="Suivant"></button>
+
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
+    </main>
+
+    <section class="partners-intro-section">
+      <h2 class="partners-intro-title"><span class="partners-intro-underline">partenaires</span> engagés à nos côtés</h2>
+      <p class="partners-intro-text">Grâce à la confiance de nos partenaires, nous développons des projets innovants,</p>
+      <p class="partners-intro-text">des échanges d'expertise et des opportunités pour nos étudiants et futurs instituteurs techniques.</p>
+    </section>
+
+    <section class="partners-types-section">
+      <div class="partners-type-block">
+        <div class="partners-type-header">
+          <div class="partners-type-icon">
+            <img src="asset/icons8-partenariat-50.png" alt="Partenaires" class="partners-type-icon-img">
+          </div>
+          <h3 class="partners-type-title">PARTENAIRES INTITUTIONNELS</h3>
+          <a href="#" class="partners-type-view-all">voir tout <span>→</span></a>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Ministère de l'Éducation">
+            </div>
+            <p class="partner-name">MINEDUB</p>
+            <p class="partner-desc">Ministère de l'éducation</p>
+            <p class="partner-desc">de Base</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="MINEE">
+            </div>
+            <p class="partner-name">MINESEC</p>
+            <p class="partner-desc">Ministère de l'Enseignement</p>
+            <p class="partner-desc">Secondaire</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="ONADI">
+            </div>
+            <p class="partner-name">MINFOPRA</p>
+            <p class="partner-desc">Ministère de la Fonction Publique</p>
+            <p class="partner-desc">et de la Réforme Asdministrative</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="UNESCO">
+            </div>
+            <p class="partner-name">REGION CENTRAL</p>
+            <p class="partner-desc">Conseil Régional</p>
+            <p class="partner-desc">du Centre</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="UNICEF">
+            </div>
+            <p class="partner-name">DEPARTEMENT DE LA MEFOU ET AFAMBA </p>
+            <p class="partner-desc">Conseil Départemental</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners-type-block">
+        <div class="partners-type-header">
+          <div class="partners-type-icon">
+            <img src="asset/icons8-partenariat-50.png" alt="Partenaires" class="partners-type-icon-img">
+          </div>
+          <h3 class="partners-type-title">PARTENAIRES ACADEMIQUES ET RECHERCHE</h3>
+          <a href="#" class="partners-type-view-all">voir tout <span>→</span></a>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise A">
+            </div>
+            <p class="partner-name">UNIVERSITE DE YAOUNDE I</p>
+            <p class="partner-desc">The University of Yaoundé I</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise B">
+            </div>
+            <p class="partner-name">IUT DE DOUALA</p>
+            <p class="partner-desc">Institut Universitaire</p>
+            <p class="partner-desc">de Technologie</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise C">
+            </div>
+            <p class="partner-name">ENSET DOUALA</p>
+            <p class="partner-desc">Ecole Normale Supérieure</p>
+            <p class="partner-desc">de l'Enseignemennt Technique</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise D">
+            </div>
+            <p class="partner-name">ENS BALMAYO</p>
+            <p class="partner-desc">Ecole Normale Supérieure</p>
+            <p class="partner-desc">de Balmoyo</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise E">
+            </div>
+            <p class="partner-name">Entreprise E</p>
+            <p class="partner-desc">Tourisme</p>
+            <p class="partner-desc">Stages internationaux</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="partners-type-block">
+        <div class="partners-type-header">
+          <div class="partners-type-icon">
+            <img src="asset/icons8-partenariat-50.png" alt="Partenaires" class="partners-type-icon-img">
+          </div>
+          <h3 class="partners-type-title">partenaires privés</h3>
+          <a href="#" class="partners-type-view-all">voir tout <span>→</span></a>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise A">
+            </div>
+            <p class="partner-name">Entreprise A</p>
+            <p class="partner-desc">Industrie électrique</p>
+            <p class="partner-desc">Stage et recrutement</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise B">
+            </div>
+            <p class="partner-name">Entreprise B</p>
+            <p class="partner-desc">Mécanique industrielle</p>
+            <p class="partner-desc">Formation continue</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise C">
+            </div>
+            <p class="partner-name">Entreprise C</p>
+            <p class="partner-desc">Construction BTP</p>
+            <p class="partner-desc">Chantiers pratiques</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise D">
+            </div>
+            <p class="partner-name">Entreprise D</p>
+            <p class="partner-desc">Informatique</p>
+            <p class="partner-desc">Technologies numériques</p>
+          </div>
+          <div class="partner-card">
+            <div class="partner-logo">
+              <img src="asset/SOA/logo_INIET.png" alt="Entreprise E">
+            </div>
+            <p class="partner-name">Entreprise E</p>
+            <p class="partner-desc">Tourisme</p>
+            <p class="partner-desc">Stages internationaux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-cta-section">
+      <div class="partner-cta-container">
+        <div class="partner-cta-card">
+          <div class="partner-cta-left">
+            <div class="partner-cta-icon">
+              <img src="asset/icons8-partenariat-50.png" alt="Partenariat" class="partner-cta-icon-img">
+            </div>
+            <div class="partner-cta-content">
+              <p class="partner-cta-text-bold">DEVENIR PARTENAIRE</p>
+              <p class="partner-cta-text">Rejoignez notre réseau de partenaires</p>
+              <p class="partner-cta-text">et contribuez à la formation d'excellence</p>
+            </div>
+          </div>
+          <a href="#" class="partner-cta-btn">nous contacter <span class="arrow-right">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <div class="footer-logo-group">
+            <img src="asset/SOA/logo_INIET.png" alt="Logo INIET" class="footer-logo">
+            <div class="footer-brand-text">
+              <p class="footer-title">INIET DE SOA</p>
+              <p class="footer-subtitle">Ecole National d'Instituteurs de</p>
+              <p class="footer-subtitle">l'Enseignement Technique</p>
+            </div>
+          </div>
+          <p class="footer-desc">Former des professionnelles compétentes</p>
+          <p class="footer-desc">pour bâtir le Cameroun de demain</p>
+          <div class="footer-social">
+            <a href="#"><img src="asset/facebook.png" alt="Facebook" class="footer-social-icon"></a>
+            <a href="#"><img src="asset/youtube.png" alt="YouTube" class="footer-social-icon"></a>
+            <a href="#"><img src="asset/mail.png" alt="Gmail" class="footer-social-icon"></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">LIEN RAPIDES</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ecole.html">L'école</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="filiere.html">Filière</a></li>
+            <li><a href="information.html">Informations</a></li>
+            <li><a href="partenaire.html">Partenaires</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 class="footer-heading">INFORMATIONS</h4>
+          <ul class="footer-links">
+            <li><a href="#"><img src="asset/localisation.png" alt="Localisation" class="footer-icon"> route de SOA, Département de la Mefou et Afamba, Region du centre</a></li>
+            <li><a href="#"><img src="asset/postale.png" alt="Boîte postale" class="footer-icon"> BP 123 SOA</a></li>
+            <li><a href="#"><img src="asset/contact.png" alt="Téléphone" class="footer-icon"> (+237) 673 45 67 89</a></li>
+            <li><a href="#"><img src="asset/mail.png" alt="Email" class="footer-icon"> contact@INIETsoa.com</a></li>
+            <li><a href="#"><img src="asset/time.png" alt="Horaires" class="footer-icon"> Lun-Sam: 8h-16h</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-map">
+          <h4 class="footer-heading">INIET DE SOA</h4>
+          <div class="footer-map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.6592038943737!2d11.4324!3d3.8743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTUnMzEuOCJOIDExwrAzMScwNC40IkU!5e0!3m2!1sfr!2scm!4v1698000000000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer-map-marker">
+              <span class="footer-map-tooltip">INIET DE SOA</span>
+            </div>
+          </div>
+          <button class="btn btn-map">Voir sur la carte</button>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <span>© 2026 INIET de SOA - tous droits réservés</span>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Mention légales</a>
+          <span class="footer-divider-vertical"></span>
+          <a href="#">Politique de confidentialité</a>
+          <span class="footer-divider-vertical"></span>
+          <a href="#">by Ghostroar Digital</a>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+       let slideIndex = 1;
+       let slideTimer;
+       let partnerSlideIndex = 1;
+
+       function changeSlide(n) {
+         clearTimeout(slideTimer);
+         showSlide(slideIndex += n);
+         startAutoSlide();
+       }
+
+       function currentSlide(n) {
+         clearTimeout(slideTimer);
+         showSlide(slideIndex = n);
+         startAutoSlide();
+       }
+
+       function showSlide(n) {
+         let slides = document.getElementsByClassName("carousel-slide");
+         let dots = document.getElementsByClassName("dot");
+
+         if (n > slides.length) {
+           slideIndex = 1;
+         }
+         if (n < 1) {
+           slideIndex = slides.length;
+         }
+
+         for (let i = 0; i < slides.length; i++) {
+           slides[i].classList.remove("active");
+         }
+         for (let i = 0; i < dots.length; i++) {
+           dots[i].classList.remove("active");
+         }
+
+         slides[slideIndex - 1].classList.add("active");
+         dots[slideIndex - 1].classList.add("active");
+       }
+
+       function startAutoSlide() {
+         slideTimer = setTimeout(() => {
+           slideIndex++;
+           showSlide(slideIndex);
+           startAutoSlide();
+         }, 5000);
+       }
+
+       function changePartnerSlide(n) {
+         showPartnerSlide(partnerSlideIndex += n);
+       }
+
+       function currentPartnerSlide(n) {
+         showPartnerSlide(partnerSlideIndex = n);
+       }
+
+  function showPartnerSlide(n) {
+         let slides = document.getElementsByClassName("partner-slide");
+         let dots = document.getElementsByClassName("partner-dot");
+
+         if (n > slides.length) {
+           partnerSlideIndex = 1;
+         }
+         if (n < 1) {
+           partnerSlideIndex = slides.length;
+         }
+
+         for (let i = 0; i < slides.length; i++) {
+           slides[i].classList.remove("active");
+         }
+         for (let i = 0; i < dots.length; i++) {
+           dots[i].classList.remove("active");
+         }
+
+         slides[partnerSlideIndex - 1].classList.add("active");
+         if (dots[partnerSlideIndex - 1]) {
+           dots[partnerSlideIndex - 1].classList.add("active");
+         }
+       }
+
+       let partnerAutoTimer;
+       function startPartnerAutoSlide() {
+         partnerAutoTimer = setTimeout(() => {
+           partnerSlideIndex++;
+           showPartnerSlide(partnerSlideIndex);
+           startPartnerAutoSlide();
+         }, 3000);
+       }
+
+       showSlide(slideIndex);
+       startAutoSlide();
+       showPartnerSlide(partnerSlideIndex);
+       startPartnerAutoSlide();
+    </script>
+</body>
+</html>

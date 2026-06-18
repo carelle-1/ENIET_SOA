@@ -317,45 +317,47 @@ body {
 }
 
 .carousel-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  max-width: none;
-  padding: 3rem 4rem 3rem 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0) 100%);
-  border-radius: 0;
-  text-align: left;
-  z-index: 6;
-  box-shadow: none;
-  border: none;
-  pointer-events: none;
-}
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   max-width: none;
+   padding: 3rem 4rem 3rem 7rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background: linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0) 100%);
+   border-radius: 0;
+   text-align: left;
+   z-index: 6;
+   box-shadow: none;
+   border: none;
+   pointer-events: none;
+ }
 
-@media (max-width: 720px) {
-  .carousel-text {
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    padding: 1.5rem 1rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 30%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.08) 100%);
-    justify-content: flex-end;
-  }
+ @media (max-width: 720px) {
+   .carousel-text {
+     top: auto;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     max-width: 100%;
+     padding: 1.5rem 1rem;
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 30%, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0.08) 100%);
+     justify-content: flex-end;
+     text-align: left;
+   }
 
-  .carousel-text .title {
-    font-size: 2rem;
-  }
+   .carousel-text .title {
+     font-size: 2rem;
+   }
 
-  .carousel-text .highlight-yellow,
-  .carousel-text .highlight-white {
-    font-size: 1rem;
-  }
+   .carousel-text .highlight-yellow,
+   .carousel-text .highlight-white {
+     font-size: 1rem;
+   }
+ }
 
   .carousel-buttons {
     flex-direction: column;
@@ -450,34 +452,37 @@ body {
 }
 
 .admission-title {
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin: 0;
-  line-height: 1.1;
-}
+   font-size: 3.5rem;
+   font-weight: 900;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   margin: 0;
+   line-height: 1.1;
+   text-align: left;
+ }
 
-.admission-subtitle {
-  font-size: 1.3rem;
-  color: #ffffff;
-  font-weight: 500;
-  margin: 0.5rem 0 0;
-  display: inline;
-}
+ .admission-subtitle {
+   font-size: 1.3rem;
+   color: #ffffff;
+   font-weight: 500;
+   margin: 0.5rem 0 0;
+   display: inline;
+   text-align: left;
+ }
 
-.admission-underline {
-  border-bottom: 3px solid #DAA520;
-  padding-bottom: 2px;
-}
+ .admission-underline {
+   border-bottom: 3px solid #DAA520;
+   padding-bottom: 2px;
+ }
 
-.admission-desc {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.95);
-  margin: 0.3rem 0 0;
-  line-height: 1.5;
-}
+ .admission-desc {
+   font-size: 1rem;
+   color: rgba(255, 255, 255, 0.95);
+   margin: 0.3rem 0 0;
+   line-height: 1.5;
+   text-align: left;
+ }
 
 .carousel-divider {
   width: 4rem;
