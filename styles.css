@@ -333,12 +333,19 @@ body {
    z-index: 6;
    box-shadow: none;
    border: none;
-   pointer-events: none;
- }
+  pointer-events: none;
+}
 
- @media (max-width: 720px) {
-   .carousel-text {
-     top: auto;
+.carousel-buttons {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  pointer-events: auto;
+}
+
+@media (max-width: 720px) {
+  .carousel-text {
+    top: auto;
      bottom: 0;
      left: 0;
      width: 100%;
